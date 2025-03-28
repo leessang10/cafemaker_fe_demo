@@ -8,9 +8,8 @@ import PageHeader from '../../components/PageHeader';
 import { events } from '../../data/events';
 
 const Container = styled.div`
-  padding: 1rem;
   background-color: #f8f9fa;
-    min-height: 100%;
+  min-height: 100%;
 `;
 
 const Content = styled.div`
