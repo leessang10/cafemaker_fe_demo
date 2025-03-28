@@ -9,8 +9,9 @@ const Header = styled.div`
   align-items: center;
   padding: 1rem;
   background-color: white;
-  border-radius: 8px;
+  // border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 `;
 
 const BackButton = styled(Link)`
