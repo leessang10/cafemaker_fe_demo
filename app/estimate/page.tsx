@@ -225,7 +225,7 @@ const CardPrice = styled.div`
 
 const ButtonContainer = styled.div`
   position: fixed;
-  bottom: 100px;
+  bottom: 5rem;
   left: 0;
   right: 0;
   background-color: white;
