@@ -6,9 +6,24 @@ import styled from 'styled-components';
 import MobileLayout from '../components/MobileLayout';
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   background-color: #f8f9fa;
+  min-height: 100%;
+`;
+
+const Header = styled.header`
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+`;
+
+const HeaderTitle = styled.h1`
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
 `;
 
 const ProfileSection = styled.div`
@@ -18,6 +33,7 @@ const ProfileSection = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
@@ -75,7 +91,7 @@ const EditProfileButton = styled(Link)`
 const MenuList = styled.div`
   background-color: white;
   border-radius: 8px;
-  margin: 0 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 `;
 
@@ -119,6 +135,9 @@ export default function MorePage() {
   return (
     <MobileLayout showHomeBar={true}>
       <Container>
+        <Header>
+          <HeaderTitle>더보기</HeaderTitle>
+        </Header>
         <ProfileSection>
           <ProfileImage>
             <Image src="/icons/default-profile.svg" alt="프로필" width={70} height={70} priority />

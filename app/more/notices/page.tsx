@@ -7,9 +7,9 @@ import PageHeader from '../../components/PageHeader';
 import { notices } from '../../data/notices';
 
 const Container = styled.div`
-  padding: 1rem;
+  // padding: 1rem;
   background-color: #f8f9fa;
-    min-height: 100%;
+  min-height: 100%;
 `;
 
 const Content = styled.div`

@@ -13,6 +13,22 @@ const StickyHeader = styled.div`
   z-index: 20;
 `;
 
+const Header = styled.header`
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+`;
+
+const HeaderTitle = styled.h1`
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+`;
+
 const ProgressContainer = styled.div`
   padding: 1rem;
   border-bottom: 1px solid #f3f4f6;
@@ -565,6 +581,9 @@ export default function EstimatePage() {
   return (
     <MobileLayout showHomeBar={true}>
       <StickyHeader>
+        <Header>
+          <HeaderTitle>카페 견적 만들기</HeaderTitle>
+        </Header>
         <ProgressContainer>
           <ProgressHeader>
             <StepCount>{showResult ? '견적 결과' : `${currentStep} / ${ESTIMATE_STEPS.length} 단계`}</StepCount>

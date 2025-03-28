@@ -6,7 +6,6 @@ import PageHeader from '../../components/PageHeader';
 import Image from 'next/image';
 
 const Container = styled.div`
-  padding: 1rem;
   background-color: #f8f9fa;
   min-height: 100%;
 `;
